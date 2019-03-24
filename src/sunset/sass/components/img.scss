@@ -1,0 +1,13 @@
+.avatar-pic{
+    width: 100%;
+    max-height: 200px;
+
+    img{
+        height: -webkit-fill-available;
+        width: -webkit-fill-available;
+        max-width: 200px;
+        max-height: 200px;
+        border-radius: 100%;
+        margin: auto;
+    }
+}

@@ -1,0 +1,117 @@
+.sidebar{
+    background: $gradient-dark-gray;
+    box-shadow: $shadow-lr-3;
+    color: $gray100;
+    height: 100%;
+    min-width: 256px;    
+    overflow-y: auto;
+    position: sticky;
+    transition: $tlabels;
+
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li{
+            a{
+                color: $gray300;
+                display: flex;
+                font-size: 14px;
+                justify-content: space-between;
+                padding: 20px 36px 20px 36px;
+                position: relative;
+                z-index: 90;
+
+                &:hover{
+                    background-color: rgba($gray600, 0.5);
+                    text-decoration: none;
+                }
+
+                &:focus{
+                    text-decoration: none;
+                }
+
+                .material-icons{
+                    max-height: 20px;
+                    transition: $tlabels;
+                }
+
+                // Submenu
+                &[aria-expanded=true]{
+                    box-shadow: $shadow-ud-3;
+
+                    .material-icons{
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+
+            &.active{
+                background-color: $gray600;
+                border-image: $gradient-primary-bottom 1 100%;
+                border-style: solid;
+                border-width: 0 0 0 6px;
+
+                a{
+                    color: white;
+                    margin-left: -6px;
+
+                    &:hover{
+                        background-color: initial;
+                    }
+                }
+            }
+
+            // Submenu
+            ul{
+                li{
+                    background-color: $gray600;
+
+                    a{
+                        border: none;
+                        display: block;
+                        font-size: 12px;
+                        padding: 16px 0 16px 56px;
+                        z-index: 50;
+                    }
+
+                    &.active{
+                        background-color: $gray700;
+                    }
+
+                    &:last-child{
+                        box-shadow: $shadow-du-3;
+                    }
+                }
+            }
+        }
+    }
+
+    .app-name{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 128px;
+
+        h3{
+            font-size: 36px;
+            font-weight: 100;
+            color: $gray100;
+        }
+    }
+
+    &.sidebar-mobile-visible{
+        box-shadow: $shadow-lr-3;
+        margin-left: 0px;
+    }
+
+    @media screen and (max-width: $break-md) {
+        box-shadow: none;
+        margin-left: -256px;
+        position: absolute;
+        z-index: 9999;
+    }
+}

@@ -1,0 +1,410 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--meta name="viewport" content="width=device-width, initial-scale=1"-->
+    <meta name="viewport" content="initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--link rel="icon" href="../../favicon.ico"-->
+
+    <title>Sunset Bootstrap 3 Theme</title>
+
+    <!-- jQuery -->
+    <script src="../dist/sunset/js/jquery.min.js"></script>
+    <script src="../dist/sunset/js/jquery.touchSwipe.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link href="../dist/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../dist/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
+
+    <!-- Dark Tropical -->
+    <link href="../dist/sunset/css/sunset.css" rel="stylesheet">
+    <script src="../dist/sunset/js/sunset.min.js"></script>
+  </head>
+
+  <body>
+
+    <div class="wrapper">
+
+      <nav id="sidebar" class="sidebar">
+        <div class="app-name">
+          <h3>SUNSET</h3>
+        </div>    
+        <ul>
+          <li class="ripple-30"><a href="../index.html">Login</a></li>
+          <li>
+            <a href="#" data-toggle="collapse" data-target="#homeSubmenu" aria-expanded="false">Components<i class="material-icons">expand_more</i></a>
+            <ul class="collapse" id="homeSubmenu">
+              <li class="ripple-30"><a href="../components.html#buttons">Buttons</a></li>
+              <li class="ripple-30"><a href="../components.html#tables">Tables</a></li>
+              <li class="ripple-30"><a href="../components.html#cards">Cards</a></li>
+              <li class="ripple-30"><a href="../components.html#forms">Forms</a></li>
+              <li class="ripple-30"><a href="../components.html#alerts">Alerts</a></li>
+              <li class="ripple-30"><a href="../components.html#lists">Lists</a></li>
+              <li class="ripple-30"><a href="../components.html#panels">Panels</a></li>
+            </ul>
+          </li>
+          <li class="ripple-30"><a href="../pages/user.html">User Registration</a></li>
+          <li class="active ripple-30"><a href="../pages/search.html">Advanced Search</a></li>
+          <li class="ripple-30"><a href="../pages/account.html">Account Management</a></li>
+        </ul>
+      </nav>
+
+      <div class="app-bar">
+        <div class="container">
+          <a href="#" id="hamburger-menu"><i class="material-icons icon-app-bar">menu</i></a>
+          <span class="title">Advanced Search</span>
+        </div>
+      </div>
+    
+      <!-- Page Content -->
+    <div class="container-fluid" id="content">
+        <h1 class="hidden-xs hidden-sm hidden-md">Advanced Search</h1>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <span class="panel-title">1. PLACE OF ORIGIN</span>
+          </div>
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-xs-12 col-md-4">
+                <div class="form-group material-select">
+                  <label>Region</label>
+                  <select class="form-control">
+                    <option>Africa</option>
+                    <option>Asia</option>
+                    <option>Europe</option>
+                    <option>Latin America</option>
+                    <option>North America</option>            
+                    <option>Oceania</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-md-4">
+                <div class="form-group material-select">
+                  <label>Country</label>
+                  <select class="form-control">
+                    <option>Angola</option>                    
+                    <option>Antigua and Barbuda</option>
+                    <option>Australia</option>
+                    <option>Belarus</option>
+                    <option>Brazil</option>
+                    <option>Canada</option>
+                    <option>Serbia</option>
+                    <option>South Africa</option>
+                    <option>Spain</option>
+                    <option>Zimbabwe</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-md-4">
+                <div class="form-group material-select">
+                  <label>State/Province</label>
+                  <select class="form-control">
+                    <option>British Columbia</option>
+                    <option>New South Wales</option>
+                    <option>Northern Territory</option>
+                    <option>Ontario</option>
+                    <option>Paraiba</option>
+                    <option>Pernambuco</option>
+                    <option>Quebec</option>
+                    <option>Queensland</option>
+                    <option>Rio de Janeiro</option>
+                    <option>Rio Grande do Norte</option>
+                    <option>Sao Paulo</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <span class="panel-title">2. PRODUCT TYPE</span>
+          </div>
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-xs-12 col-md-3">
+                <div class="form-group material-select">
+                  <label>Categories</label>
+                  <select multiple class="form-control">
+                    <option>Angola</option>
+                    <option>Burma (Myanmar)</option>
+                    <option>Cambodia</option>
+                    <option>Iceland</option>
+                    <option>Montenegro</option>
+                    <option>Zambigue</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col-xs-6 col-md-3">
+                <label>Gender</label>
+                <form>
+                  <div class="radiobutton">
+                    <label>Male
+                      <input type="radio" name="radio" checked="checked">
+                      <span class="checkmark"></span>
+                    </label>                
+                  </div>
+                  <div class="radiobutton">
+                    <label>Female
+                      <input type="radio" name="radio">
+                      <span class="checkmark"></span>
+                    </label>                
+                  </div>
+                  <div class="radiobutton">
+                    <label>Don't Care
+                      <input type="radio" name="radio">
+                      <span class="checkmark"></span>
+                    </label>                
+                  </div>
+                </form>
+              </div>
+
+              <div class="col-xs-6 col-md-3">
+                <label>Some Choices
+                <div class="checkbox">
+                  <label>Lorem ipsum
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>                
+                </div>
+                <div class="checkbox">
+                  <label>Dolor sit amet
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>                
+                </div>
+                <div class="checkbox">
+                  <label>Consectetur adipiscing
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>                
+                </div>
+                <div class="checkbox">
+                  <label>In sodales metus
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>                
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-md-3">
+                <label>More Choices
+                <div class="checkbox">
+                  <label>Vel hendrerit
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>                
+                </div>
+                <div class="checkbox">
+                  <label>Sed dignissim
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>                
+                </div>
+                <div class="checkbox">
+                  <label>Eros et dui
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>                
+                </div>
+                <div class="checkbox">
+                  <label>In et magna
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>                
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <span class="panel-title">3. PERIOD</span>
+          </div>
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-xs-12 col-md-4">
+                <div class="form-group material-input">
+                  <label class="label-always-outside" for="dateBeginning">Beginning</label>
+                  <input type="date" class="form-control" id="dateBeginning">
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-md-4">
+                <div class="form-group material-input">
+                  <label class="label-always-outside" for="dateEnd">End</label>
+                  <input type="date" class="form-control" id="dateEnd">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <button type="button" class="btn btn-raised btn-primary ripple-90 float-right">SEARCH</button>
+          </div>
+        </div>
+
+        <br><br>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>                
+                      </div>
+                    </th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Username</th>
+                    <th>E-Mail</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>                
+                      </div>
+                    </td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>mark.lastname@somemail.com</td>
+                    <td>
+                      <i class="btn btn-action material-icons">bookmark</i>
+                      <i class="btn btn-action material-icons">edit</i>
+                      <i class="btn btn-action material-icons">delete</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>                
+                      </div>
+                    </td>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@wut</td>
+                    <td>jacob.lastname@somemail.com</td>
+                    <td>
+                      <i class="btn btn-action material-icons">bookmark</i>
+                      <i class="btn btn-action material-icons">edit</i>
+                      <i class="btn btn-action material-icons">delete</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>                
+                      </div>
+                    </td>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                    <td>larry.lastname@somemail.com</td>
+                    <td>
+                      <i class="btn btn-action material-icons">bookmark</i>
+                      <i class="btn btn-action material-icons">edit</i>
+                      <i class="btn btn-action material-icons">delete</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>                
+                      </div>
+                    </td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>mark.lastname@somemail.com</td>
+                    <td>
+                      <i class="btn btn-action material-icons">bookmark</i>
+                      <i class="btn btn-action material-icons">edit</i>
+                      <i class="btn btn-action material-icons">delete</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>                
+                      </div>
+                    </td>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@wut</td>
+                    <td>jacob.lastname@somemail.com</td>
+                    <td>
+                      <i class="btn btn-action material-icons">bookmark</i>
+                      <i class="btn btn-action material-icons">edit</i>
+                      <i class="btn btn-action material-icons">delete</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>                
+                      </div>
+                    </td>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                    <td>larry.lastname@somemail.com</td>
+                    <td>
+                      <i class="btn btn-action material-icons">bookmark</i>
+                      <i class="btn btn-action material-icons">edit</i>
+                      <i class="btn btn-action material-icons">delete</i>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+  </body>
+</html>

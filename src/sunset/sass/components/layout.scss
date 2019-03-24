@@ -1,0 +1,133 @@
+$break-xs: 768px;
+$break-sm: 991px;
+$break-md: 1200px;
+$break-lg: 999999px;
+
+html, body, .container-fluid, .wrapper{
+    height: 100%;
+}
+
+.container-fluid{
+    overflow-y: scroll;
+    padding: 106px 50px 50px 50px;
+
+    // phone
+    @media screen and (max-width: $break-xs) {
+        padding: 72px 16px 16px 16px;
+
+        //-webkit-overflow-scrolling: touch;
+    }
+
+    // tablet
+    @media screen and (max-width: $break-md) and (min-width: $break-xs){
+        padding: 86px 30px 30px 30px;
+
+        //-webkit-overflow-scrolling: touch;
+    }
+}
+
+.login-screen{
+    background: $gradient-dark-gray;
+
+    .container{
+        height: 100%;
+        padding: 0 56px 0 56px;
+
+        .row{
+            height: 100%;
+
+            div[class^="col-"]{
+                height: 100%;
+            }
+        }
+    }
+}
+
+.vertical-center{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.modal{
+    background-color: transparentize($gray700, 0.35);
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    touch-action: none;
+    z-index: 999;
+}
+
+.wrapper{
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+
+    @media screen and (max-width: $break-md){
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+.container .jumbotron, .container-fluid .jumbotron,.jumbotron{
+    background-color: rgba($gray100, 0.5);
+    border-radius: 0px;
+}
+
+.container-fluid{
+    width: 100%;
+}
+
+.float-left{
+    float: left;
+}
+
+.float-right{
+    float: right;
+}
+
+
+@media screen and (min-width: $break-sm){
+    .panel{
+        .row:last-child{
+            div[class^="col-"]{
+                > *:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $break-sm){
+    .panel{
+        .row:last-child{
+            div[class^="col-"]:last-child{
+                > *:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+.full-center{
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row-eq-height{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+}
+
+#content{
+    position: relative;
+}
