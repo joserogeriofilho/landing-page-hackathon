@@ -79,58 +79,29 @@
     font-size: 40px;
     line-height: 40px; }
 
-html, body, .container-fluid, .wrapper {
+html, body, .wrapper {
   height: 100%; }
 
+.wrapper {
+  height: 100%; }
+  @media screen and (max-width: 1200px) {
+    .wrapper {
+      -webkit-overflow-scrolling: touch; } }
+
 .container-fluid {
-  overflow-y: scroll;
-  padding: 106px 50px 50px 50px; }
+  padding: 50px 50px 50px 50px; }
   @media screen and (max-width: 768px) {
     .container-fluid {
-      padding: 72px 16px 16px 16px; } }
+      padding: 16px 16px 16px 16px; } }
   @media screen and (max-width: 1200px) and (min-width: 768px) {
     .container-fluid {
-      padding: 86px 30px 30px 30px; } }
-
-.login-screen {
-  background: linear-gradient(to right, #40404B, #303038); }
-  .login-screen .container {
-    height: 100%;
-    padding: 0 56px 0 56px; }
-    .login-screen .container .row {
-      height: 100%; }
-      .login-screen .container .row div[class^="col-"] {
-        height: 100%; }
+      padding: 30px 30px 30px 30px; } }
 
 .vertical-center {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center; }
-
-.modal {
-  background-color: rgba(32, 32, 38, 0.65);
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  touch-action: none;
-  z-index: 999; }
-
-.wrapper {
-  display: flex;
-  height: 100%;
-  overflow: hidden; }
-  @media screen and (max-width: 1200px) {
-    .wrapper {
-      -webkit-overflow-scrolling: touch; } }
-
-.container .jumbotron, .container-fluid .jumbotron, .jumbotron {
-  background-color: rgba(217, 217, 219, 0.5);
-  border-radius: 0px; }
-
-.container-fluid {
-  width: 100%; }
 
 .float-left {
   float: left; }
@@ -158,9 +129,6 @@ html, body, .container-fluid, .wrapper {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
-
-#content {
-  position: relative; }
 
 .sidebar {
   background: linear-gradient(to right, #40404B, #303038);
@@ -238,7 +206,7 @@ html, body, .container-fluid, .wrapper {
       z-index: 9999; } }
 
 .app-bar {
-  background: linear-gradient(to right, #40404B, #303038);
+  background: #434343;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   width: 100%;
   min-height: 56px;
@@ -744,19 +712,6 @@ p .btn {
     .card .card-primary-title + .card-rich-media img {
       border-radius: 0; }
 
-.alert {
-  background: linear-gradient(to right, #40404B, #303038);
-  border: none;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
-  .alert.alert-info {
-    color: #90BBE5; }
-  .alert.alert-success {
-    color: #9CCBB3; }
-  .alert.alert-warning {
-    color: #E5B966; }
-  .alert.alert-danger {
-    color: #FE7A71; }
-
 .list-group {
   border: none;
   padding: 8px 0 8px 0; }
@@ -838,3 +793,19 @@ p .btn {
     max-height: 200px;
     border-radius: 100%;
     margin: auto; }
+
+#section-welcome {
+  padding: 106px 50px 50px 50px;
+  background-color: #434343; }
+  @media screen and (max-width: 768px) {
+    #section-welcome {
+      padding: 72px 16px 16px 16px; } }
+  @media screen and (max-width: 1200px) and (min-width: 768px) {
+    #section-welcome {
+      padding: 86px 30px 30px 30px; } }
+
+#section-reasons {
+  background-color: #ececed; }
+
+#section-reason-1 {
+  background-color: #4099d2; }

@@ -1,0 +1,21 @@
+#section-welcome{
+    padding: 106px 50px 50px 50px; // Desktop
+
+    @media screen and (max-width: $break-xs) {
+        padding: 72px 16px 16px 16px; // phone
+    }
+
+    @media screen and (max-width: $break-md) and (min-width: $break-xs){
+        padding: 86px 30px 30px 30px; // tablet
+    }
+
+    background-color: $dark-gray;
+}
+
+#section-reasons{
+    background-color: $light-gray;
+}
+
+#section-reason-1{
+    background-color: $blue;
+}

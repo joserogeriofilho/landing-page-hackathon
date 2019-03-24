@@ -1,19 +1,3 @@
-// SIDEBAR
-function showSidebar() {
-    if($('.sidebar').css("margin-left") !== "0px"){
-        var $modal = '<div id="sidebar-modal" class="modal"></div>';
-
-        $('.sidebar').addClass('sidebar-mobile-visible');
-        $( ".wrapper" ).append( $modal );
-    }
-}
-
-function hideSidebar(){
-    $('.sidebar').removeClass('sidebar-mobile-visible');
-    $( "#sidebar-modal" ).remove();
-}
-
-
 // EVENTS
 $( document ).ready(function() {
 
@@ -50,16 +34,6 @@ $( document ).ready(function() {
             }
         });
     }).scroll();
-
-    // Hide and show sidebar on mobile
-    $("body").on("click", '#hamburger-menu', function() {
-        showSidebar();
-    });
-
-    $("body").on("click", '#sidebar-modal', function() {
-        hideSidebar();
-    });
-
 
     // INPUTS
 
