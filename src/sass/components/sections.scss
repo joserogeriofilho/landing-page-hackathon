@@ -1,14 +1,4 @@
 #section-welcome{
-    padding: 106px 140px 50px 140px; // Desktop
-
-    @media screen and (max-width: $break-xs) {
-        padding: 72px 20px 56px 20px; // phone
-    }
-
-    @media screen and (max-width: $break-md) and (min-width: $break-xs){
-        padding: 136px 80px 80px 80px; // tablet
-    }
-
     background-color: $dark-gray;
     color: $light-gray;
 
@@ -18,6 +8,16 @@
 
     #call-to-action{
         margin-bottom: 56px;
+    }
+
+    padding: 106px 140px 50px 140px; // Desktop
+
+    @media screen and (max-width: $break-xs) {
+        padding: 72px 20px 56px 20px; // phone
+    }
+
+    @media screen and (max-width: $break-md) and (min-width: $break-xs){
+        padding: 136px 80px 80px 80px; // tablet
     }
 }
 
@@ -163,6 +163,11 @@
         color: $light-gray;
         font-size: 28px;
         font-weight: 400;
+    }
+
+    #call-to-action{
+        color: white;
+        margin-top: 56px;
     }
 
     padding: 150px 140px 150px 140px; // Desktop

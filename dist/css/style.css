@@ -749,19 +749,19 @@ p .btn {
     margin: auto; }
 
 #section-welcome {
-  padding: 106px 140px 50px 140px;
   background-color: #434343;
-  color: #ececed; }
+  color: #ececed;
+  padding: 106px 140px 50px 140px; }
+  #section-welcome #subtitle {
+    margin-bottom: 56px; }
+  #section-welcome #call-to-action {
+    margin-bottom: 56px; }
   @media screen and (max-width: 768px) {
     #section-welcome {
       padding: 72px 20px 56px 20px; } }
   @media screen and (max-width: 1200px) and (min-width: 768px) {
     #section-welcome {
       padding: 136px 80px 80px 80px; } }
-  #section-welcome #subtitle {
-    margin-bottom: 56px; }
-  #section-welcome #call-to-action {
-    margin-bottom: 56px; }
 
 #section-tips-list {
   padding: 160px 140px 104px 140px;
@@ -859,6 +859,9 @@ p .btn {
     color: #ececed;
     font-size: 28px;
     font-weight: 400; }
+  #section-we-can-help #call-to-action {
+    color: white;
+    margin-top: 56px; }
   @media screen and (max-width: 768px) {
     #section-we-can-help {
       padding: 56px 20px 56px 20px; } }
