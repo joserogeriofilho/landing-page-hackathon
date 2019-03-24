@@ -1,8 +1,6 @@
 // EVENTS
 $( document ).ready(function() {
 
-    // SIDEBAR
-
     // Dynamic active links
     $('.sidebar li a').on("click", function() {
         var $this = $(this);

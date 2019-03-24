@@ -3,8 +3,6 @@
     font-weight: 500;
     font-size: 14px;
     padding: 10px 16px 10px 16px;
-    margin-left: 6px;
-    margin-right: 6px;
 
     &.btn-lg{
         font-weight: 500;
@@ -52,6 +50,23 @@
         }
         &.btn-danger{
             background-color: $red500;
+        }
+
+        // NestReady
+        &.btn-nr-blue{
+            background-color: $blue;
+
+            &:hover{
+                color: white;
+            }
+
+            &:active{
+                color: white;
+            }
+
+            &:focus{
+                color: white;
+            }
         }
     }
 
@@ -129,12 +144,6 @@
 
     &.btn-round{
         border-radius: 99px;
-        margin: 30px 0 0 0;
-        width: 100%;
-
-        & + .btn-round{
-            margin-top: 24px;
-        }
     }
 
     &.btn-dark-outline{

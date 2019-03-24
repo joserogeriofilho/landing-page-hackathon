@@ -89,7 +89,7 @@ html, body, .wrapper {
       -webkit-overflow-scrolling: touch; } }
 
 .container-fluid {
-  padding: 50px 50px 50px 50px; }
+  padding: 50px 140px 50px 140px; }
   @media screen and (max-width: 768px) {
     .container-fluid {
       padding: 16px 16px 16px 16px; } }
@@ -227,7 +227,7 @@ html, body, .wrapper {
     .app-bar .container .title {
       color: white;
       font-size: 16px;
-      font-weight: 500; }
+      font-weight: 400; }
 
 label {
   font-size: 12px;
@@ -447,73 +447,23 @@ select:-webkit-autofill:focus {
 html, body, .container-fluid {
   font-family: 'Roboto', sans-serif; }
 
-h1, .jumbotron h1 {
-  color: #66666F;
-  font-size: 36px;
-  font-weight: 300;
-  line-height: 0.85;
-  margin-bottom: 30px; }
-  h1 small, .jumbotron h1 small {
-    color: #40404B;
-    font-size: 18px;
-    font-weight: 500; }
-
-.jumbotron h1 {
-  color: #F57C00; }
-
-.page-header {
-  border-bottom: 1px solid #B3B3B7;
-  padding-top: 64px;
-  margin-top: 0;
-  margin-bottom: 32px; }
-  .page-header h1 {
-    margin: 0 0 10px 0; }
-
-h2 {
-  color: #F57C00;
-  font-weight: 400;
-  font-size: 22px;
-  margin-top: 24px;
-  margin-bottom: 16px; }
+h1 {
+  font-size: 44px;
+  font-weight: 700; }
 
 h3 {
-  color: #8C8C93;
-  font-weight: 500;
-  font-size: 16px;
-  margin-top: 16px;
-  margin-bottom: 12px; }
+  font-size: 48px;
+  font-weight: 700; }
 
-.container .jumbotron p, .container-fluid .jumbotron p, .jumbotron p {
-  color: #40404B;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 28px; }
-
-.panel h1, .panel h2, .panel h3 {
-  margin: 0px; }
-
-.login-screen h1 {
-  color: white;
-  font-size: 36px;
-  font-weight: 300;
-  text-align: center; }
-
-.login-screen p {
-  color: #B3B3B7;
-  margin: 30px 0 0 0;
-  text-align: center; }
-
-.illustration-icon {
-  font-size: 248px;
-  color: #D9D9DB; }
+h6 {
+  font-size: 20px;
+  font-weight: 400; }
 
 .btn {
   border: none;
   font-weight: 500;
   font-size: 14px;
-  padding: 10px 16px 10px 16px;
-  margin-left: 6px;
-  margin-right: 6px; }
+  padding: 10px 16px 10px 16px; }
   .btn.btn-lg {
     font-weight: 500;
     font-size: 16px;
@@ -544,6 +494,14 @@ h3 {
       background-color: #D48B00; }
     .btn.btn-raised.btn-danger {
       background-color: #FE4D42; }
+    .btn.btn-raised.btn-nr-blue {
+      background-color: #4099d2; }
+      .btn.btn-raised.btn-nr-blue:hover {
+        color: white; }
+      .btn.btn-raised.btn-nr-blue:active {
+        color: white; }
+      .btn.btn-raised.btn-nr-blue:focus {
+        color: white; }
   .btn.btn-flat {
     background-color: transparent; }
     .btn.btn-flat:first-child {
@@ -585,11 +543,7 @@ h3 {
   .btn[aria-expanded=true] .text-expanded {
     display: block; }
   .btn.btn-round {
-    border-radius: 99px;
-    margin: 30px 0 0 0;
-    width: 100%; }
-    .btn.btn-round + .btn-round {
-      margin-top: 24px; }
+    border-radius: 99px; }
   .btn.btn-dark-outline {
     background: transparent;
     border-color: #B3B3B7;
@@ -795,17 +749,61 @@ p .btn {
     margin: auto; }
 
 #section-welcome {
-  padding: 106px 50px 50px 50px;
-  background-color: #434343; }
+  padding: 106px 140px 50px 140px;
+  background-color: #434343;
+  color: #ececed; }
   @media screen and (max-width: 768px) {
     #section-welcome {
-      padding: 72px 16px 16px 16px; } }
+      padding: 72px 20px 56px 20px; } }
   @media screen and (max-width: 1200px) and (min-width: 768px) {
     #section-welcome {
-      padding: 86px 30px 30px 30px; } }
+      padding: 136px 80px 80px 80px; } }
+  #section-welcome #subtitle {
+    margin-bottom: 56px; }
+  #section-welcome #call-to-action {
+    margin-bottom: 56px; }
 
-#section-reasons {
-  background-color: #ececed; }
-
-#section-reason-1 {
+#section-tips-list {
+  padding: 160px 140px 104px 140px;
   background-color: #4099d2; }
+  @media screen and (max-width: 768px) {
+    #section-tips-list {
+      padding: 56px 20px 0px 20px; } }
+  @media screen and (max-width: 1200px) and (min-width: 768px) {
+    #section-tips-list {
+      padding: 80px 80px 24px 80px; } }
+  #section-tips-list .reason-tips-item {
+    color: white;
+    text-align: center;
+    margin-bottom: 56px;
+    display: flex;
+    flex-direction: column; }
+    #section-tips-list .reason-tips-item .tip-icon {
+      font-size: 80px;
+      margin-bottom: 16px; }
+    #section-tips-list .reason-tips-item .tip-label {
+      font-size: 32px;
+      font-weight: 400; }
+
+#section-tip-right {
+  padding: 150px 140px 150px 140px;
+  background-color: #ececed;
+  display: flex; }
+  @media screen and (max-width: 768px) {
+    #section-tip-right {
+      padding: 56px 20px 56px 20px; } }
+  @media screen and (max-width: 1200px) and (min-width: 768px) {
+    #section-tip-right {
+      padding: 80px 80px 80px 80px; } }
+  #section-tip-right .tip-image {
+    width: 50%;
+    height: auto; }
+  #section-tip-right .tip-info {
+    text-align: right;
+    width: 50%; }
+    #section-tip-right .tip-info h3 {
+      color: #4099d2; }
+    #section-tip-right .tip-info p {
+      color: #434343;
+      font-size: 28px;
+      font-weight: 400; }

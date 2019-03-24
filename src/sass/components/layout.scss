@@ -16,7 +16,7 @@ html, body, .wrapper{
 }
 
 .container-fluid{
-    padding: 50px 50px 50px 50px; // desktop  
+    padding: 50px 140px 50px 140px; // desktop  
 
     @media screen and (max-width: $break-xs) {
         padding: 16px 16px 16px 16px; // phone

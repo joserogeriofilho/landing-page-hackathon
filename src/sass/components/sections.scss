@@ -1,21 +1,90 @@
 #section-welcome{
-    padding: 106px 50px 50px 50px; // Desktop
+    padding: 106px 140px 50px 140px; // Desktop
 
     @media screen and (max-width: $break-xs) {
-        padding: 72px 16px 16px 16px; // phone
+        padding: 72px 20px 56px 20px; // phone
     }
 
     @media screen and (max-width: $break-md) and (min-width: $break-xs){
-        padding: 86px 30px 30px 30px; // tablet
+        padding: 136px 80px 80px 80px; // tablet
     }
 
     background-color: $dark-gray;
+    color: $light-gray;
+
+    #subtitle{
+        margin-bottom: 56px;
+    }
+
+    #call-to-action{
+        margin-bottom: 56px;
+    }
 }
 
-#section-reasons{
-    background-color: $light-gray;
-}
+#section-tips-list{
+    padding: 160px 140px 104px 140px; // Desktop
 
-#section-reason-1{
+    @media screen and (max-width: $break-xs) {
+        padding: 56px 20px 0px 20px; // phone
+    }
+
+    @media screen and (max-width: $break-md) and (min-width: $break-xs){
+        padding: 80px 80px 24px 80px; // tablet
+    }
+
     background-color: $blue;
+
+    .reason-tips-item{
+        color: white;
+        text-align: center;
+        margin-bottom: 56px;
+
+        display: flex;
+        flex-direction: column;
+
+        .tip-icon{
+            font-size: 80px;
+            margin-bottom: 16px;
+        }
+
+        .tip-label{
+            font-size: 32px;
+            font-weight: 400;
+        }
+    }
+}
+
+#section-tip-right{
+    padding: 150px 140px 150px 140px; // Desktop
+
+    @media screen and (max-width: $break-xs) {
+        padding: 56px 20px 56px 20px; // phone
+    }
+
+    @media screen and (max-width: $break-md) and (min-width: $break-xs){
+        padding: 80px 80px 80px 80px; // tablet
+    }
+
+    background-color: $light-gray;
+    display: flex;
+
+    .tip-image{
+        width: 50%;
+        height: auto;
+    }
+
+    .tip-info{
+        text-align: right;
+        width: 50%;
+
+        h3{
+            color: $blue;
+        }
+    
+        p{
+            color: $dark-gray;
+            font-size: 28px;
+            font-weight: 400;
+        }
+    }
 }
