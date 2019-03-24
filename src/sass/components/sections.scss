@@ -55,22 +55,15 @@
 }
 
 #section-tip-right{
-    padding: 150px 140px 150px 140px; // Desktop
-
-    @media screen and (max-width: $break-xs) {
-        padding: 56px 20px 56px 20px; // phone
-    }
-
-    @media screen and (max-width: $break-md) and (min-width: $break-xs){
-        padding: 80px 80px 80px 80px; // tablet
-    }
-
     background-color: $light-gray;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 
     .tip-image{
         width: 50%;
         height: auto;
+        margin-right: 100px;
     }
 
     .tip-info{
@@ -86,5 +79,99 @@
             font-size: 28px;
             font-weight: 400;
         }
+    }
+
+    padding: 150px 140px 150px 140px; // Desktop
+
+    @media screen and (max-width: $break-xs) { // phone
+        padding: 56px 20px 56px 20px; 
+        flex-direction: column;
+
+        .tip-image, .tip-info{
+            width: 100%;
+        }
+
+        .tip-image{
+            margin: 0 0 36px 0;
+        }
+    }
+
+    @media screen and (max-width: $break-md) and (min-width: $break-xs){
+        padding: 80px 80px 80px 80px; // tablet
+    }
+}
+
+#section-tip-left{
+    background-color: $light-gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .tip-image{
+        width: 50%;
+        height: auto;
+        margin-left: 100px;
+    }
+
+    .tip-info{
+        text-align: left;
+        width: 50%;
+
+        h3{
+            color: $blue;
+        }
+    
+        p{
+            color: $dark-gray;
+            font-size: 28px;
+            font-weight: 400;
+        }
+    }
+
+    padding: 150px 140px 150px 140px; // Desktop
+
+    @media screen and (max-width: $break-xs) { // phone
+        padding: 56px 20px 56px 20px; 
+        flex-direction: column-reverse;
+
+        .tip-image, .tip-info{
+            width: 100%;
+        }
+
+        .tip-image{
+            margin: 0 0 36px 0;
+        }
+    }
+
+    @media screen and (max-width: $break-md) and (min-width: $break-xs){
+        padding: 80px 80px 80px 80px; // tablet
+    }
+}
+
+#section-we-can-help{
+    background-color: $dark-gray;
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+
+    h3{
+        color: $blue;
+    }
+
+    p{
+        color: $light-gray;
+        font-size: 28px;
+        font-weight: 400;
+    }
+
+    padding: 150px 140px 150px 140px; // Desktop
+
+    @media screen and (max-width: $break-xs) { // phone
+        padding: 56px 20px 56px 20px; 
+    }
+
+    @media screen and (max-width: $break-md) and (min-width: $break-xs){
+        padding: 80px 80px 80px 80px; // tablet
     }
 }
