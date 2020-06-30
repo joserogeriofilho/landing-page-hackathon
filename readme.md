@@ -18,4 +18,4 @@ This project was developed in an one day hackathon organized by VanHack as part 
 * [unDrawn Illustrations](https://undraw.co/license) 
 
 ### Live Demo
-https://landing-page-hackathon.herokuapp.com/
+https://joserogeriofilho.github.io/landing-page-hackathon/
